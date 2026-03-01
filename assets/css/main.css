@@ -2275,3 +2275,18 @@ button,
     border-top: 0;
     margin-top: 0;
     padding-top: 0; }
+
+article ul.actions {
+  flex-wrap: wrap;   /* allow wrapping */
+}
+
+/* Keep action buttons inside the article when the available width changes (zoom/responsive) */
+article ul.actions {
+  flex-wrap: wrap;   /* allow wrapping */
+  margin-left: 0;    /* override template's negative margin */
+  gap: 0.75em;       /* modern spacing between buttons */
+}
+
+article ul.actions li {
+  padding-left: 0;   /* since we're using gap now */
+}
