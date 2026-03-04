@@ -2311,3 +2311,26 @@ article ul.actions li {
     left: 0;
   }
 }
+
+
+/* Improve figure + caption spacing */
+figure {
+  margin: 0 0 1.5em 0;   /* space after the whole figure block */
+}
+
+figure .image {
+  margin-bottom: 0.4em;  /* small gap between image and caption */
+}
+
+/* Figure captions: tighten spacing between image and caption inside .posts cards */
+.posts article figure > .image,
+.posts article figure > a.image {
+  margin: 0 0 0.4em 0; /* overrides .posts article .image { margin-bottom: 2em } */
+}
+
+figcaption {
+  margin: 0;
+  font-size: 0.9em;
+  text-align: center;
+  font-style: italic;
+}
