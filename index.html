@@ -107,21 +107,21 @@
 						<div class="posts">
 							<article>
 								<a class="image"><img src="images/e-lung-in-clinical-setting_cropped.jpg" alt="" /></a>
-								<h3>Automated assessment of interstitial lung disease (ILD) in chest CT imaging  @ <a href="https://www.brainomix.com/ild/" target = "_blank" style="color: blue">Brainomix</a> (Oxford, 2022-2026)</h3>
-								<p> I developed and deployed an explainable respiratory phase classifier for chest CT using shape features derived from deep learning-based trachea and lung segmentations to support the reliability of in-house ILD biomarkers. I also conducted survival analysis using random survival forests and Cox proportional hazards models to assess the predictive power of these biomarkers and automated this analysis to improve ML testing workflows in CI/CD. Finally, I worked on denoising as a preprocessing step (e.g., via guided filtering) and level-set-based postprocessing to enhance airway and lung segmentation.</p>
+								<h3>Automated assessment of interstitial lung disease (ILD) in chest CT imaging  @ <a href="https://www.brainomix.com/ild/" target = "_blank" style="color: blue">Brainomix</a> (Oxford, 2022–current)</h3>
+								<p> I developed and deployed an explainable respiratory phase classifier for chest CT using shape features derived from deep learning-based trachea and lung segmentations to support the reliability of in-house ILD biomarkers. I also conducted survival analysis using random survival forests and Cox proportional hazards models to assess the predictive power of these biomarkers. I automated this analysis and optimized memory and speed to improve ML testing workflows in CI/CD. Finally, I worked on denoising as a preprocessing step (e.g., via guided filtering) and level-set-based postprocessing to enhance airway and lung segmentation.</p>
 							</article>
 							<article>
 								<a class="image"><img src="images/unsplash_finance.jpg" alt="" /></a>
 								<h3>Deep generative modeling and NLP for finance @ <a href="https://www.sonycsl.co.jp/en/" target = "_blank" style="color: blue">Sony Computer Science Laboratories</a> (Tokyo, 2022)</h3>
-								<p> I researched NLP algorithms, including approaches involving LSTMs with GloVe embeddings and transformer-based language models (BERT and MPNet), for problems such as fake-news and greenwashing detection, supporting Nomura Asset Management in assessing corporate sustainability. I also developed a method inspired by the optical-flow algorithm to estimate time-dependent loadings in security factor models and trained a VAE to learn and visualize low-dimensional fund-month exposure embeddings, supporting investment analysis at GPIF, one of the world's largest pension funds.</p>
+								<p> I researched NLP algorithms, including approaches involving transformer-based language models (BERT and MPNet) and LSTMs with GloVe embeddings, for problems such as fake-news and greenwashing detection, supporting Nomura Asset Management in assessing corporate sustainability. I also developed a method inspired by the optical-flow algorithm to estimate time-dependent loadings in security factor models and trained a variational autoencoder to learn and visualize low-dimensional fund-month exposure embeddings, supporting investment analysis at GPIF, one of the world's largest pension funds.</p>
 								<ul class="actions">
 									<li><a href="https://www.sonycsl.co.jp/en/projects/asse22-project/" target='_blank' class="button">Project Webpage</a></li>
 								</ul>
 							</article>
 							<article>
 								<a class="image"><img src="images/mri_forecasting.png" alt="" /></a>
-								<h3>Cine-MR image forecasting with RNNs and transformers for latency compensation in radiotherapy @ The University of Tokyo (2017-2021, independent work until 2026)</h3>
-								<p>I designed an algorithm to forecast future frames in dynamic chest and liver MR images for safe MR-guided radiotherapy, using PCA-based motion modeling and temporal dynamics prediction with RNNs trained online and transformer encoders. The proposed approach is modular, interpretable, and can help overcome data scarcity, motion irregularity, and distributional shift between the training and test datasets for population models. 
+								<h3>Cine-MR image forecasting with RNNs trained online and transformers for latency compensation in radiotherapy @ The University of Tokyo (2017–2021, independent work until 2026)</h3>
+								<p>I designed an algorithm to forecast frames in chest and liver MR image sequences for safe MR-guided radiotherapy, combining deformable image registration, PCA-based motion modeling, and temporal dynamics prediction with RNNs trained online and transformer encoders. The proposed approach is modular, interpretable, and data-efficient. It can help overcome motion irregularity and distributional shift between the training and test datasets for population models. 
 								</p>
 								<ul class="actions">
 									<!-- <li><a href="https://youtu.be/09uKHJooavU?t=558" target='_blank' class="button">YouTube (2021)</a></li> -->
@@ -132,8 +132,8 @@
 							</article>
 							<article>
 								<a class="image"><img src="images/prediction_external_markers_DNI.png" alt="" /></a>
-								<h3>External marker position forecasting using RNNs trained online for safer radiotherapy  @ The University of Tokyo (2020-2021, independent work until 2025)</h3>
-								<p> I proposed implementations of online training algorithms for RNNs (UORO, SnAp-1, and DNI) with closed-form simplifications as well as improved accuracy and reduced time/memory complexity. I assessed their ability to forecast the 3D positions of markers on the chest and abdomen for latency compensation and robotic control in radiotherapy for the first time. In our experiments, modern online learning algorithms enabled RNNs to adapt to irregular breathing patterns with limited data and achieve competitive accuracy compared to prior deep learning approaches trained on larger datasets, while keeping inference time relatively low.</p>
+								<h3>Marker-position forecasting using RNNs trained online and transformers for safer radiotherapy  @ The University of Tokyo (2020–2021, independent work until 2026)</h3>
+								<p> I derived implementations of online training algorithms for RNNs (UORO, SnAp-1, and DNI) with closed-form simplifications, improved accuracy, and reduced asymptotic time/memory complexity. This study is the first to assess their ability to forecast the 3D positions of external markers on the chest and abdomen for latency compensation and robotic control in radiotherapy. Experimentally, modern online-learning algorithms enabled RNNs to adapt fairly well to irregular breathing patterns and achieve competitive accuracy with less data than prior deep-learning approaches, while keeping processing time relatively low.</p>
 								<h5>UORO article:</h5>
 								<ul class="actions">
 									<li><a href="https://doi.org/10.1016/j.cmpb.2022.106908" target='_blank' class="button">Publication</a></li>
@@ -158,7 +158,7 @@
 							<article>
 								<a class="image"><img src="images/brain_as_graph.png" alt="" /></a>
 								<h3>Graph-structured data classification for computer-aided diagnosis in neurology @ <a href="https://www.fresnel.fr/spip/" target = "_blank" style="color: blue">Fresnel Institute</a> (Marseille, 2016)</h3>
-								<p> I implemented a generalized likelihood ratio test for binary classification of graph-structured data via Fourier graph transforms, based on <a href="https://doi.org/10.1016/j.neuroimage.2015.10.026" target = "_blank" >prior work from Hu et al</a>. I applied this method to Alzheimer's disease detection, by modeling brain regions in PET images as nodes in a graph with edge weights defined by Gaussian RBF kernels over regional imaging features, and obtained a leave-one-out test F1 score of 0.85 on a dataset of 142 brain scans. Last, I explored optimization of region-independent weights corresponding to each image property to maximize classification accuracy. </p>
+								<p> I implemented a binary classifier for graph-structured data, combining generalized likelihood ratio testing and Fourier graph transforms, based on <a href="https://doi.org/10.1016/j.neuroimage.2015.10.026" target = "_blank" >prior work from Hu et al</a>. I applied this method to Alzheimer's disease detection, modeling brain regions in PET images as nodes in a graph with edge weights defined by Gaussian RBF kernels over regional imaging features, and obtained a leave-one-out test F1 score of 0.85 on a dataset of 142 brain scans. Last, I explored optimization of region-independent weights corresponding to each image property to maximize classification accuracy. </p>
 <!-- 							<ul class="actions">
 									<li><a href="#" class="button">More</a></li>
 								</ul> -->
