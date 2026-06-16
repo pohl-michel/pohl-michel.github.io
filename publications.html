@@ -4,6 +4,23 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
+
+<style>
+  /* Publications page only */
+  #main ul li {
+    color: #3d4449;           /* same dark color as headings */
+    margin-bottom: 0.5em        /* space between publication items */
+  }
+
+  #main ul li .pub-note {
+    display: block;
+    color: #7f888f;              /* softer explanatory grey */
+    margin-top: 0.15em;
+    line-height: 1.55;
+    font-size: 0.95em;
+  }
+</style>
+
 <html>
 	<head>
 		<title>Michel Pohl - Publications & Talks</title>
@@ -100,6 +117,9 @@
 								[<a href="https://doi.org/10.48550/arXiv.2410.05882" target ="_blank">arXiv preprint</a>]
 								[<a href="https://doi.org/10.1016/j.compmedimag.2026.102755" target ="_blank">Published version</a>]
 								[<a href="https://github.com/pohl-michel/2D-MR-image-prediction" target ="_blank">Code on GitHub</a>]
+								<span class="pub-note">
+									This study applies RNN online learning algorithms for the first time to frame forecasting in chest and liver cine MRI and compares them with transformers. These algorithms are integrated within a modular, interpretable, and data-efficient pipeline combining deformable image registration, PCA-based respiratory motion modeling, and temporal breathing-dynamics prediction. Performance was broadly in line with prior literature on respiratory MRI forecasting, including works exploring end-to-end generative architectures. Online-trained RNNs outperformed other methods at medium-to-long horizons (the time interval in the future for which the prediction is made), while sequence-specific transformers were competitive at low-to-medium horizons.
+								</span>
 								</li>	
 
 								<li> Michel Pohl, Mitsuru Uesaka, Hiroyuki Takahashi, Kazuyuki Demachi, and Ritu Bhusal Chhatkuli, "Real-time respiratory motion forecasting with online learning of recurrent neural networks for accurate targeting in externally guided radiotherapy", Computer Methods and Programs in Biomedicine (2025) <br>
@@ -171,17 +191,22 @@
 							<h3 id="awards">Scholarships, Grants, and Awards</h3>
 
 							<ul>
-								<li>Sept. 2018–Sept. 2021: <a href="https://www.t.u-tokyo.ac.jp/en/soe/admission/seut-ra" target ="_blank">SEUT-RA (The University of Tokyo Doctoral Student Special Incentives Program)</a>. Competitive doctoral research grant; received support throughout 2018–2021, including SEUT-RA Type A in 2019–2020, awarded to the top 20 second-year Ph.D. applicants at the Graduate School of Engineering.
+								<li>Sept. 2018–Sept. 2021: <a href="https://www.t.u-tokyo.ac.jp/en/soe/admission/seut-ra" target ="_blank">SEUT-RA (The University of Tokyo Doctoral Student Special Incentives Program)</a>. 
+									<span class="pub-note">Competitive doctoral research grant; received support throughout 2018–2021, including SEUT-RA Type A in 2019–2020, awarded to the top 20 second-year Ph.D. applicants at the Graduate School of Engineering.
+									</span>
 								</li>								
-								<li>Apr. 2019–Apr. 2021: Scholarship from the Epson International Scholarship Foundation. Two-year scholarship awarded following a competitive selection process, including interviews in Japanese at Epson on research activities and future plans.
+								<li>Apr. 2019–Apr. 2021: Scholarship from the Epson International Scholarship Foundation. 
+									<span class="pub-note">Two-year scholarship awarded following a competitive selection process, including interviews in Japanese at Epson on research activities and future plans.
+									</span>
 								</li>
-								<li>March 2018 and March 2019: Idea Prize and <a href="http://www.aesj.or.jp/shibu/kanto/pdf/student_award_history_220512.pdf" target ="_blank">Encouragement Prize</a>, Atomic Energy Society of Japan. Awarded for my poster at the AESJ spring annual meeting and my presentation at the AESJ student meeting, respectively.
+								<li>March 2018 and March 2019: Idea Prize and <a href="http://www.aesj.or.jp/shibu/kanto/pdf/student_award_history_220512.pdf" target ="_blank">Encouragement Prize</a>, Atomic Energy Society of Japan. 
+									<span class="pub-note">Awarded for my poster at the AESJ spring annual meeting and my presentation at the AESJ student meeting, respectively.</span>
 								</li> 
 								<li>
 								2016: <a href="https://www.youtube.com/watch?v=9-X_9rzc--A&t=580s" target ="_blank"> Valedictorian award </a> (M.Sc. in Signal and Image Processing, Centrale Méditerranée).
 								</li>
 								<li>
-								Sept. 2016–March 2017 and Sept. 2017–March 2018: MEXT Honors Scholarship for Privately-Financed International Students 	
+								Sept. 2016–March 2017 and Sept. 2017–March 2018: MEXT Honors Scholarship for Privately-Financed International Students.
 								</li>
 							</ul>
 
