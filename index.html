@@ -4,6 +4,51 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
+
+<!-- <style>
+	.collapsible-projects summary {
+	cursor: pointer;
+	font-weight: 600;
+	margin-bottom: 1.5em;
+	}
+
+	.collapsible-projects[open] summary {
+	margin-bottom: 2em;
+	}
+</style> -->
+
+<style>
+.collapsible-projects summary {
+  cursor: pointer;
+  color: inherit;
+  font-weight: 600;
+  margin-bottom: 1.5em;
+  transition: color 0.2s ease;
+}
+
+.collapsible-projects summary:hover {
+  color: #f56a6a; /* same accent color often used by HTML5 UP Editorial */
+}
+
+.collapsible-projects[open] > *:not(summary) {
+  animation: fade-in 0.25s ease-in;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(-1.5em);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+</style>
+
+
+
 <html>
 	<head>
 		<title>Michel Pohl - Homepage</title>
@@ -100,7 +145,7 @@
 					</section>
 
 					<!-- Section -->
-					<section id="ML projects">
+					<section id="ml-projects">
 						<header class="major">
 							<h2> Machine learning projects</h2>
 						</header>
@@ -172,10 +217,15 @@
 					</section>
 
 					<!-- Section -->
-					<section id="Other projects">
+
+					<section id="earlier-projects">
 						<header class="major">
-							<h2> Other projects</h2>
+							<h2>Earlier physics and engineering projects</h2>
 						</header>
+
+						<details class="collapsible-projects">
+    					<summary>Show earlier projects</summary>
+
 						<div class="posts">
 							<article>
 								<a class="image"><img src="images/coupe_robotique_enhanced.jpg" alt="" /></a>
@@ -204,10 +254,11 @@
 								</ul> -->
 							</article>
 						</div>
-					</section>								
+					</details>	
+					</section>							
 
 					<!-- Section -->
-					<section id = "Recommendations">
+					<section id = "recommendations">
 						<header class="major">
 							<h2>Recommendations</h2>
 						</header>
@@ -274,9 +325,9 @@
 						</header>
 						<ul>
 							<li><a href="#banner">About me</a></li>
-							<li><a href="#ML projects">Machine learning projects</a></li>
-							<li><a href="#Other projects">Other projects</a></li>
-							<li><a href="#Recommendations">Recommendations</a></li>
+							<li><a href="#ml-projects">Machine learning projects</a></li>
+							<li><a href="#earlier-projects">Earlier physics and engineering projects</a></li>
+							<li><a href="#recommendations">Recommendations</a></li>
 						</ul>
 					</nav>
 
