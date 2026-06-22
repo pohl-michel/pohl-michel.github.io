@@ -30,8 +30,16 @@
   color: #f56a6a; /* same accent color often used by HTML5 UP Editorial */
 }
 
-.collapsible-projects.is-opening .collapsible-content {
+/* Default: simple CSS animation */
+.collapsible-projects[open] .collapsible-content {
   animation: fade-in 0.25s ease-in both;
+}
+
+/* Mobile: avoid scroll retriggering */
+@media screen and (max-width: 736px) {
+  .collapsible-projects[open] .collapsible-content {
+    animation: none;
+  }
 }
 
 @keyframes fade-in {
@@ -388,22 +396,6 @@
 		<script src="assets/js/breakpoints.min.js"></script>
 		<script src="assets/js/util.js"></script>
 		<script src="assets/js/main.js"></script>
-
-	<script>
-	document.querySelectorAll('.collapsible-projects').forEach((details) => {
-		details.addEventListener('toggle', () => {
-		if (!details.open) return;
-
-		details.classList.remove('is-opening');
-		void details.offsetWidth; // restart animation only after real toggle
-		details.classList.add('is-opening');
-
-		window.setTimeout(() => {
-			details.classList.remove('is-opening');
-		}, 300);
-		});
-	});
-	</script>
 
 	</body>
 </html>
