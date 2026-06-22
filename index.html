@@ -30,8 +30,8 @@
   color: #f56a6a; /* same accent color often used by HTML5 UP Editorial */
 }
 
-.collapsible-projects[open] > *:not(summary) {
-  animation: fade-in 0.25s ease-in;
+.collapsible-projects.is-opening .collapsible-content {
+  animation: fade-in 0.25s ease-in both;
 }
 
 @keyframes fade-in {
@@ -225,6 +225,7 @@
 
 						<details class="collapsible-projects">
     					<summary>Show earlier projects</summary>
+						<div class="collapsible-content">
 
 						<div class="posts">
 							<article>
@@ -253,6 +254,7 @@
 									<li><a href="#" class="button">More</a></li>
 								</ul> -->
 							</article>
+						</div>
 						</div>
 					</details>	
 					</section>							
@@ -386,6 +388,22 @@
 		<script src="assets/js/breakpoints.min.js"></script>
 		<script src="assets/js/util.js"></script>
 		<script src="assets/js/main.js"></script>
+
+	<script>
+	document.querySelectorAll('.collapsible-projects').forEach((details) => {
+		details.addEventListener('toggle', () => {
+		if (!details.open) return;
+
+		details.classList.remove('is-opening');
+		void details.offsetWidth; // restart animation only after real toggle
+		details.classList.add('is-opening');
+
+		window.setTimeout(() => {
+			details.classList.remove('is-opening');
+		}, 300);
+		});
+	});
+	</script>
 
 	</body>
 </html>
