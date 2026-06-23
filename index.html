@@ -17,43 +17,7 @@
 	}
 </style> -->
 
-<style>
-.collapsible-projects summary {
-  cursor: pointer;
-  color: inherit;
-  font-weight: 600;
-  margin-bottom: 1.5em;
-  transition: color 0.2s ease;
-}
 
-.collapsible-projects summary:hover {
-  color: #f56a6a; /* same accent color often used by HTML5 UP Editorial */
-}
-
-/* Default: simple CSS animation */
-.collapsible-projects[open] .collapsible-content {
-  animation: fade-in 0.25s ease-in both;
-}
-
-/* Mobile: avoid scroll retriggering */
-@media screen and (max-width: 736px) {
-  .collapsible-projects[open] .collapsible-content {
-    animation: none;
-  }
-}
-
-@keyframes fade-in {
-  from {
-    opacity: 0;
-    transform: translateY(-1.5em);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-</style>
 
 
 
@@ -67,7 +31,44 @@
 		<link rel="stylesheet" href="assets/css/academicons.min.css"/>
 		<script src="https://kit.fontawesome.com/06f1fdf007.js" crossorigin="anonymous"></script> <!-- fonts awesome -->
 
+		<style>
+			.collapsible-projects summary {
+			cursor: pointer;
+			color: inherit;
+			font-weight: 600;
+			margin-bottom: 1.5em;
+			transition: color 0.2s ease;
+			}
+
+			.collapsible-projects summary:hover {
+			color: #f56a6a; /* same accent color often used by HTML5 UP Editorial */
+			}
+
+			/* Default: simple CSS animation */
+			.collapsible-projects[open] .collapsible-content {
+			animation: fade-in 0.25s ease-in both;
+			}
+
+			/* Mobile: avoid scroll retriggering */
+			@media screen and (max-width: 736px) {
+			.collapsible-projects[open] .collapsible-content {
+				animation: none;
+			}
+			}
+
+			@keyframes fade-in {
+			from {
+				opacity: 0;
+				transform: translateY(-1.5em);
+			}
+			to {
+				opacity: 1;
+				transform: translateY(0);
+			}
+			}
+		</style>
 	</head>
+	
 	<body class="is-preload">
 
 		<!-- Wrapper -->
